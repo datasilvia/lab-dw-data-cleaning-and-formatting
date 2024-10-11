@@ -49,25 +49,3 @@ def deal_with_null_values(df):
 def reset_indexes(df):
     df.reset_index(drop=True)
     return df
-
-
-
-
-
-
-
-def program1(df):
-    show_columns(df)
-    format_column_names(df)
-    return df
-
-df = df.rename(columns={'st': 'state'})
-
-def program2(df):
-    clean_invalid_data(df)
-    format_data_types(df)
-    deal_with_null_values(df)
-    reset_indexes(df)
-    return df
-
-print("hola")
